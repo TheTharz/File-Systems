@@ -24,7 +24,7 @@ int main(void){
     exit(0);
   }else{
     char data[5]="hello";
-    int bytes_written = write(fd1,data,5);
+    int bytes_written = write(fd2,data,5);
 
     if(bytes_written==-1){
       perror("./doc3.txt");
