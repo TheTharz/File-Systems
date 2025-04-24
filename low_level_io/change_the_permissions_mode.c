@@ -15,7 +15,7 @@ int main(void){
     close(fd1);
   }
 
-  chmod("./doc3.txt",O_RDONLY);
+  chmod("./doc3.txt",S_IRUSR);
 
   int fd2 = open("./doc3.txt",O_RDONLY,S_IRUSR);
   if(fd2==-1){
